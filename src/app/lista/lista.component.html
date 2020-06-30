@@ -1,0 +1,27 @@
+<div style="border: 1px solid #ccc; border-radius: 4px; padding: 5px;">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">RG</th>
+        <th scope="col">Deletar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pessoa of listaPessoas">
+        <th scope="row">{{ pessoa.codigo }}</th>
+        <td>{{ pessoa.nome }}</td>
+        <td>{{ pessoa.idade }}</td>
+        <td>{{ pessoa.sexo }}</td>
+        <td>{{ pessoa.rg }}</td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="excluirCadastro(pessoa.codigo)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

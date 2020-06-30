@@ -1,0 +1,9 @@
+.rodape{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    border-top: .5px solid #ccc;
+    font-size: 16px;
+}
